@@ -10,15 +10,15 @@ git clone https://github.com/kevall474/vulkan-spirv-pkg.git && cd vulkan-spirv-p
 
 # build libdrm-git
 
-git clone https://github.com/kevall474/libdrm-git.git && cd libdrm-git && makepkg -si --noconfirm && cd ..
+git clone https://github.com/kevall474/libdrm-git.git && cd libdrm-git && makepkg -si && cd ..
 
 # build libglvnd-git
 
-git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && makepkg -si --noconfirm && cd ..
+git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && makepkg -si && cd ..
 
 # build mesa-git
 
-git clone https://github.com/kevall474/mesa-pkg.git && cd mesa-pkg && env _compiler=3 _release=3 makepkg -si --noconfirm && cd ..
+git clone https://github.com/kevall474/mesa-pkg.git && cd mesa-pkg && env _compiler=3 _release=3 makepkg -si && cd ..
 
 # make a copy of every pkg in pkg/ dir
 
