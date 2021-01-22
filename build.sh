@@ -24,7 +24,6 @@ git clone https://github.com/kevall474/mesa-pkg.git && cd mesa-pkg && env _compi
 
 mkdir pkg
 
-
 cp -v */pkg/*.pkg.tar.zst pkg/
 cp -v */*.pkg.tar.zst pkg/
 
