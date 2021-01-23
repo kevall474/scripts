@@ -18,7 +18,7 @@ git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && ma
 
 # build mesa-git
 
-git clone https://github.com/kevall474/mesa-pkg.git && cd mesa-pkg && env _compiler=3 _release=3 _lib32=y makepkg -si && cd ..
+git clone https://github.com/kevall474/mesa-pkg.git && cd mesa-pkg && env _compiler=2 _release=3 _lib32=y makepkg -si && cd ..
 
 # make a copy of every pkg in pkg/ dir
 
