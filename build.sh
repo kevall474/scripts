@@ -10,11 +10,11 @@ git clone https://github.com/kevall474/vulkan-spirv-pkg.git && cd vulkan-spirv-p
 
 # build libdrm-git
 
-git clone https://github.com/kevall474/libdrm-git.git && cd libdrm-git && makepkg -si && cd ..
+git clone https://github.com/kevall474/libdrm-git.git && cd libdrm-git && env _compiler=2 _lib32=y makepkg -si && cd ..
 
 # build libglvnd-git
 
-git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && makepkg -si && cd ..
+git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && env _compiler=2 _lib32=y makepkg -si && cd ..
 
 # build mesa-git
 
