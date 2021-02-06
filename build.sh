@@ -8,6 +8,10 @@ git clone https://github.com/kevall474/llvm-pkg.git && cd llvm-pkg && chmod +x b
 
 git clone https://github.com/kevall474/vulkan-spirv-pkg.git && cd vulkan-spirv-pkg && chmod +x build.sh && ./build.sh && cd ..
 
+# build xorg video driver package
+
+git clone https://github.com/kevall474/xorg-pkg.git && cd xorg-pkg && chmod +x build.sh && ./build.sh && cd ..
+
 # build libdrm-git
 
 git clone https://github.com/kevall474/libdrm-git.git && cd libdrm-git && env _compiler=2 _lib32=y makepkg -si && cd ..
