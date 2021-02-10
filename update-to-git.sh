@@ -46,6 +46,14 @@ git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && en
 
 git clone https://github.com/kevall474/mesa-pkg.git && cd mesa-pkg && env _compiler=2 _release=3 _lib32=y makepkg -si && cd ..
 
+# build umr-git
+
+git clone https://github.com/kevall474/umr-git.git && cd umr-git && env _compiler=2 _lib32=y makepkg -si && cd ..
+
+# build hsakmt-git
+
+git clone https://github.com/kevall474/hsakmt-git.git && cd hsakmt-git && env _compiler=2 _lib32=y makepkg -si && cd ..
+
 # make a copy of every pkg in pkg/ dir
 
 mkdir pkg
