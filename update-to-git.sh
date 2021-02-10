@@ -20,6 +20,10 @@ git clone https://github.com/kevall474/glslang-git.git && cd glslang-git && env 
 
 git clone https://github.com/kevall474/vulkan-pkg.git && cd vulkan-pkg && chmod +x build.sh && ./build.sh && cd ..
 
+# build opencl git package
+
+git clone https://github.com/kevall474/opencl-pkg.git && cd opencl-pkg && chmod +x build.sh && ./build.sh && cd ..
+
 # build xorg video driver package
 
 git clone https://github.com/kevall474/xorg-pkg.git && cd xorg-pkg && chmod +x build.sh && ./build.sh && cd ..
