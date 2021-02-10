@@ -4,9 +4,21 @@
 
 git clone https://github.com/kevall474/llvm-pkg.git && cd llvm-pkg && chmod +x build.sh && ./build.sh && cd ..
 
-# build vulkan/spirv/opencl -git
+# build spirv git package
 
-git clone https://github.com/kevall474/vulkan-spirv-pkg.git && cd vulkan-spirv-pkg && chmod +x build.sh && ./build.sh && cd ..
+git clone https://github.com/kevall474/spirv-pkg.git && cd spirv-pkg && chmod +x build.sh && ./build.sh && cd ..
+
+# build protobuf-git package
+
+git clone https://github.com/kevall474/protobuf-git.git && cd protobuf-git && env _compiler=2 _lib32=y makepkg -si && cd ..
+
+# build glslang-git package
+
+git clone https://github.com/kevall474/glslang-git.git && cd glslang-git && env _compiler=2 _lib32=y makepkg -si && cd ..
+
+# build vulkan git package
+
+git clone https://github.com/kevall474/vulkan-pkg.git && cd vulkan-pkg && chmod +x build.sh && ./build.sh && cd ..
 
 # build xorg video driver package
 
