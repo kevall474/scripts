@@ -30,7 +30,7 @@ git clone https://github.com/kevall474/vulkan-pkg.git && cd vulkan-pkg && chmod 
 
 git clone https://github.com/kevall474/opencl-pkg.git && cd opencl-pkg && chmod +x build.sh && ./build.sh && cd ..
 
-# build xorg video driver package
+# build xorg video driver and xorg-util-macros git package
 
 git clone https://github.com/kevall474/xorg-pkg.git && cd xorg-pkg && chmod +x build.sh && ./build.sh && cd ..
 
