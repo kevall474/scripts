@@ -62,11 +62,11 @@ git clone https://github.com/kevall474/umr-git.git && cd umr-git && env _compile
 
 git clone https://github.com/kevall474/hsakmt-git.git && cd hsakmt-git && env _compiler=2 _lib32=y makepkg -si && cd ..
 
-# make a copy of every pkg in package/ dir
+# make a copy of every pkg in package-$(date -I)/ dir
 
-mkdir package
+mkdir package-$(date -I)
 
-cp -v */package/*.pkg.tar.zst package/
+cp -v */package-$(date -I)/*.pkg.tar.zst package-$(date -I)/
 cp -v */*.pkg.tar.zst package/
 
 # clean build dir
