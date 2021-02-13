@@ -67,7 +67,7 @@ git clone https://github.com/kevall474/hsakmt-git.git && cd hsakmt-git && env _c
 mkdir package-$(date -I)
 
 cp -v */package-$(date -I)/*.pkg.tar.zst package-$(date -I)/
-cp -v */*.pkg.tar.zst package/
+cp -v */*.pkg.tar.zst package-$(date -I)/
 
 # clean build dir
 
