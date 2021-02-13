@@ -64,10 +64,10 @@ git clone https://github.com/kevall474/hsakmt-git.git && cd hsakmt-git && env _c
 
 # make a copy of every pkg in pkg/ dir
 
-mkdir pkg
+mkdir package
 
-cp -v */pkg/*.pkg.tar.zst pkg/
-cp -v */*.pkg.tar.zst pkg/
+cp -v */package/*.pkg.tar.zst package/
+cp -v */*.pkg.tar.zst package/
 
 # clean build dir
 
