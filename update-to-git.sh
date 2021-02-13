@@ -46,6 +46,14 @@ git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && en
 
 git clone https://github.com/kevall474/mesa-pkg.git && cd mesa-pkg && env _compiler=2 _release=3 _lib32=y makepkg -si && cd ..
 
+# build glu-git
+
+git clone https://github.com/kevall474/glu-git.git && cd glu-git && env _compiler=2 _lib32=y makepkg -si && cd ..
+
+# build freeglut-git
+
+git clone https://github.com/kevall474/freeglut-git.git && cd freeglut-git && env _compiler=2 _lib32=y makepkg -si && cd ..
+
 # build umr-git
 
 git clone https://github.com/kevall474/umr-git.git && cd umr-git && env _compiler=2 _lib32=y makepkg -si && cd ..
