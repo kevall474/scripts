@@ -62,7 +62,7 @@ git clone https://github.com/kevall474/umr-git.git && cd umr-git && env _compile
 
 git clone https://github.com/kevall474/hsakmt-git.git && cd hsakmt-git && env _compiler=2 _lib32=y makepkg -si && cd ..
 
-# make a copy of every pkg in pkg/ dir
+# make a copy of every pkg in package/ dir
 
 mkdir package
 
