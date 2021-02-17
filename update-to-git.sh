@@ -8,7 +8,10 @@
 
 # build llvm,clang,compiler-rt,polly,lld,lldb,lic++,libc++adi,libc++experimental,llvm-libs,mlir,lib32-clang,lib32-llvm,lib32-llvm-libs,spirv-llvm-translator,libclc -git
 
-git clone https://github.com/kevall474/llvm-pkg.git && cd llvm-pkg && chmod +x build.sh && ./build.sh && cd ..
+#git clone https://github.com/kevall474/llvm-pkg.git && cd llvm-pkg && chmod +x build.sh && ./build.sh && cd ..
+
+# my personnal build command (for my machine). Uncomment previous command line and comment out this command line for your machine 
+git clone https://github.com/kevall474/llvm-pkg.git && cd llvm-pkg && sed -i 's/ninja/ninja -j12/' lib32-llvm-git/PKGBUILD && sed -i 's/ninja -C build all/ninja -j12 -C build all/' lib32-llvm-git/PKGBUILD && chmod +x build.sh && ./build.sh && cd ..
 
 # build spirv git package
 
