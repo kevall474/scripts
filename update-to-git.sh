@@ -6,6 +6,10 @@
 #|   <  __/\ V / (_| | | |__   _/ / |__   _|
 #|_|\_\___| \_/ \__,_|_|_|  |_|/_/     |_|
 
+# build linux-api-headers-git
+
+git clone https://github.com/kevall474/linux-api-heaaders-git.git && cd linux-api-heaaders-git && makepkg -si && cd ..
+
 # build llvm,clang,compiler-rt,polly,lld,lldb,lic++,libc++adi,libc++experimental,llvm-libs,mlir,lib32-clang,lib32-llvm,lib32-llvm-libs,spirv-llvm-translator,libclc -git
 
 git clone https://github.com/kevall474/llvm-pkg.git && cd llvm-pkg && chmod +x build.sh && ./build.sh && cd ..
