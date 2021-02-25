@@ -6,6 +6,8 @@
 #|   <  __/\ V / (_| | | |__   _/ / |__   _|
 #|_|\_\___| \_/ \__,_|_|_|  |_|/_/     |_|
 
+# the purpose of this scripts is for building git package for my Archlinux repo plus building mesa-stable and mesa-rc release
+
 # build linux-api-headers-git
 
 git clone https://github.com/kevall474/linux-api-heaaders-git.git && cd linux-api-heaaders-git && makepkg -si && cd ..
@@ -48,7 +50,15 @@ git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && en
 
 # build mesa-git
 
-git clone https://github.com/kevall474/mesa-git.git && cd mesa-pkg && env _compiler=2 makepkg -si && cd ..
+git clone https://github.com/kevall474/mesa-git.git && cd mesa-git && env _compiler=2 makepkg -si && cd ..
+
+# build mesa-rc but not installing
+
+git clone https://github.com/kevall474/mesa-rc.git && cd mesa-rc && env _compiler=2 makepkg -s && cd ..
+
+# build mesa-stable but not installing
+
+git clone https://github.com/kevall474/mesa-stable.git && cd mesa-stable && env _compiler=2 makepkg -s && cd ..
 
 # build glu-git
 
