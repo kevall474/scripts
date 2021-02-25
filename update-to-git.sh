@@ -48,7 +48,7 @@ git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && en
 
 # build mesa-git
 
-git clone https://github.com/kevall474/mesa-pkg.git && cd mesa-pkg && env _compiler=2 _release=3 _lib32=y makepkg -si && cd ..
+git clone https://github.com/kevall474/mesa-git.git && cd mesa-pkg && env _compiler=2 makepkg -si && cd ..
 
 # build glu-git
 
