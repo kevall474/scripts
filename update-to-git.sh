@@ -50,15 +50,15 @@ git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && en
 
 # build mesa-git
 
-git clone https://github.com/kevall474/mesa-git.git && cd mesa-git && env _compiler=2 makepkg -si && cd ..
+git clone https://github.com/kevall474/mesa-git.git && cd mesa-git && chmod +x build.sh && ./build.sh && cd ..
 
 # build mesa-rc but not installing
 
-git clone https://github.com/kevall474/mesa-rc.git && cd mesa-rc && env _compiler=2 makepkg -s && cd ..
+git clone https://github.com/kevall474/mesa-rc.git && cd mesa-rc && chmod +x build.sh && ./build.sh && cd ..
 
 # build mesa-stable but not installing
 
-git clone https://github.com/kevall474/mesa-stable.git && cd mesa-stable && env _compiler=2 makepkg -s && cd ..
+git clone https://github.com/kevall474/mesa-stble.git && cd mesa-stable && chmod +x build.sh && ./build.sh && cd ..
 
 # build glu-git
 
