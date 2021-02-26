@@ -52,13 +52,13 @@ git clone https://github.com/kevall474/libglvnd-git.git && cd libglvnd-git && en
 
 git clone https://github.com/kevall474/mesa-git.git && cd mesa-git && chmod +x build.sh && ./build.sh && cd ..
 
-# build mesa-rc but not installing
+# build mesa-rc
 
-git clone https://github.com/kevall474/mesa-rc.git && cd mesa-rc && chmod +x build.sh && ./build.sh && cd ..
+#git clone https://github.com/kevall474/mesa-rc.git && cd mesa-rc && chmod +x build.sh && ./build.sh && cd ..
 
-# build mesa-stable but not installing
+# build mesa-stable
 
-git clone https://github.com/kevall474/mesa-stble.git && cd mesa-stable && chmod +x build.sh && ./build.sh && cd ..
+#git clone https://github.com/kevall474/mesa-stble.git && cd mesa-stable && chmod +x build.sh && ./build.sh && cd ..
 
 # build glu-git
 
