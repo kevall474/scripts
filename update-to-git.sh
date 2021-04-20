@@ -26,7 +26,7 @@ cp -v */*.pkg.tar.zst package-$(date -I)/
 rm -rf */src/
 rm -rf */pkg/
 
-# build robin-hood-hashing
+# build robin-hood-hashing-git
 git clone https://github.com/kevall474/Package.git
 cd Package
 cd robin-hood-hashing-git && makepkg -si --noconfirm && cd ..
@@ -38,56 +38,56 @@ rm -rf */src/
 rm -rf */pkg/
 cd ..
 
-# build KhronosGroup package exept ocl-icd that depend on Mesa
+# build KhronosGroup (git version) packages exept ocl-icd that depend on Mesa
 git clone https://github.com/kevall474/KhronosGroup.git
 cd KhronosGroup
 chmod +x build.sh
 ./build.sh
 cd ..
 
-# build Xorg packages
+# build Xorg (git version) packages
 git clone https://github.com/kevall474/Xorg.git
 cd Xorg
 chmod +x build.sh
 ./build.sh
 cd ..
 
-# build libdrm
+# build libdrm-git and lib32-libdrm-git
 git clone https://github.com/kevall474/DRM.git
 cd DRM
 chmod +x build.sh
 ./build.sh
 cd ..
 
-# build libglvnd
+# build libglvnd-git and lib32-libglvnd-git
 git clone https://github.com/kevall474/GLVND.git
 cd GLVND
 chmod +x build.sh
 ./build.sh
 cd ..
 
-# build mesa
+# build mesa-git and lib32-mesa-git
 git clone https://github.com/kevall474/mesa-git.git
 cd mesa-git
 chmod +x build.sh
 ./build.sh
 cd ..
 
-# build Freedesktop package
+# build Freedesktop (git version) package
 git clone https://github.com/kevall474/Freedesktop.git
 cd Freedesktop
 chmod +x build.sh
 ./build.sh
 cd ..
 
-# Freeglut
+# build freeglut-git and lib32-freeglut-git
 git clone https://github.com/kevall474/Freeglut.git
 cd Freeglut
 chmod +x build.sh
 ./build.sh
 cd ..
 
-# build ocl-icd
+# build ocl-icd-git and lib32-ocl-icd-git
 cd KhronosGroup
 chmod +x build-ocl.sh
 ./build-ocl.sh
