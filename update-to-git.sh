@@ -1,5 +1,17 @@
 #!/usr/bin/bash
 
+# build linux-api-heades-git
+git clone https://github.com/kevall474/linux-api-heades-git.git
+cd linux-api-heades-git
+makepkg -si --noconfirm
+# make a copy of every pkg in package-$(date -I)/ dir
+mkdir -p package-$(date -I)
+cp -v *.pkg.tar.zst package-$(date -I)/
+# clean build dir
+rm -rf src/
+rm -rf pkg/
+cd ..
+
 # build llvm (git version)
 git clone https://github.com/kevall474/llvm-git.git
 cd llvm-git
@@ -29,10 +41,10 @@ rm -rf */pkg/
 # build robin-hood-hashing-git
 git clone https://github.com/kevall474/robin-hood-hashing-git.git
 cd robin-hood-hashing-git
-makepkg -si --noconfirm && cd ..
+makepkg -si --noconfirm
 # make a copy of every pkg in package-$(date -I)/ dir
 mkdir -p package-$(date -I)
-cp -v */*.pkg.tar.zst package-$(date -I)/
+cp -v *.pkg.tar.zst package-$(date -I)/
 # clean build dir
 rm -rf src/
 rm -rf pkg/
