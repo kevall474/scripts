@@ -27,9 +27,22 @@ rm -rf */src/
 rm -rf */pkg/
 
 # build robin-hood-hashing-git
-git clone https://github.com/kevall474/Package.git
-cd Package
-cd robin-hood-hashing-git && makepkg -si --noconfirm && cd ..
+git clone https://github.com/kevall474/robin-hood-hashing-git.git
+cd robin-hood-hashing-git
+makepkg -si --noconfirm && cd ..
+# make a copy of every pkg in package-$(date -I)/ dir
+mkdir -p package-$(date -I)
+cp -v */*.pkg.tar.zst package-$(date -I)/
+# clean build dir
+rm -rf src/
+rm -rf pkg/
+cd ..
+
+# build protobuf-git and lib32-protobuf-git
+git clone https://github.com/kevall474/protobuf-git.git
+cd protobuf-git
+cd protobuf-git && makepkg -si --noconfirm && cd ..
+cd lib32-protobuf-git && makepkg -si --noconfirm && cd ..
 # make a copy of every pkg in package-$(date -I)/ dir
 mkdir -p package-$(date -I)
 cp -v */*.pkg.tar.zst package-$(date -I)/
