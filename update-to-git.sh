@@ -3,7 +3,7 @@
 # build llvm (git version)
 git clone https://github.com/kevall474/llvm-git.git
 cd llvm-git
-###
+##
 # my personnal command (for my machine)
 #sed -i '92s/ninja/ninja -j12/' clang-git/PKGBUILD
 #sed -i 's/ninja -C build all/ninja -j12 -C build all/' lib32-llvm-git/PKGBUILD
