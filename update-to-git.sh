@@ -2,7 +2,7 @@
 
 # build linux-api-heades-git
 git clone https://github.com/kevall474/linux-api-headers-git.git
-cd linux-api-heades-git
+cd linux-api-headers-git
 makepkg -si --noconfirm
 # make a copy of every pkg in package-$(date -I)/ dir
 mkdir -p package-$(date -I)
