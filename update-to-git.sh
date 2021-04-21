@@ -41,14 +41,8 @@ cd ..
 # build protobuf-git and lib32-protobuf-git
 git clone https://github.com/kevall474/protobuf-git.git
 cd protobuf-git
-cd protobuf-git && makepkg -si --noconfirm && cd ..
-cd lib32-protobuf-git && makepkg -si --noconfirm && cd ..
-# make a copy of every pkg in package-$(date -I)/ dir
-mkdir -p package-$(date -I)
-cp -v */*.pkg.tar.zst package-$(date -I)/
-# clean build dir
-rm -rf */src/
-rm -rf */pkg/
+chmod +x build.sh
+./build.sh
 cd ..
 
 # build KhronosGroup (git version) packages exept ocl-icd that depend on Mesa
