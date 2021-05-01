@@ -15,3 +15,5 @@ git clone https://github.com/kevall474/gcc-git && cd gcc-git && makepkg -si && c
 cd binutils-git && rm -rf *.pkg.tar.zst && rm -rf pkg src && makepkg -si && cd ..
 
 cd glibc-git && cd glibc-git && rm -rf *.pkg.tar.zst && rm -rf pkg src && makepkg -si && cd .. && cd ..
+
+git clone https://github.com/kevall474/libtool-git && cd libtool-git && chmod +x build.sh && ./build.sh && cd ..
