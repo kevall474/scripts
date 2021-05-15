@@ -57,7 +57,7 @@ chmod +x build.sh
 ./build.sh
 cd ..
 
-# build KhronosGroup (git version) packages exept ocl-icd that depend on Mesa
+# build KhronosGroup (git version) packages
 git clone https://github.com/kevall474/KhronosGroup.git
 cd KhronosGroup
 chmod +x build.sh
@@ -107,7 +107,8 @@ chmod +x build.sh
 cd ..
 
 # build ocl-icd-git and lib32-ocl-icd-git
-cd KhronosGroup
+git clone https://github.com/kevall474/ocl-icd-git.git
+cd ocl-icd-git
 chmod +x build-ocl.sh
 ./build-ocl.sh
 cd ..
