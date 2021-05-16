@@ -12,8 +12,12 @@ git clone https://github.com/kevall474/binutils-git && cd binutils-git && makepk
 
 git clone https://github.com/kevall474/gcc-git && cd gcc-git && makepkg -si && cd ..
 
-cd binutils-git && rm -rf *.pkg.tar.zst && rm -rf pkg src && makepkg -si && cd ..
+rm -rf binutils-git
 
-cd glibc-git && cd glibc-git && rm -rf *.pkg.tar.zst && rm -rf pkg src && makepkg -si && cd .. && cd ..
+rm -rf glibc-git
+
+git clone https://github.com/kevall474/binutils-git && cd binutils-git && makepkg -si && cd ..
+
+git clone https://github.com/kevall474/glibc-git && cd glibc-git && cd glibc-git && makepkg -si && cd .. && cd ..
 
 git clone https://github.com/kevall474/libtool-git && cd libtool-git && chmod +x build.sh && ./build.sh && cd ..
